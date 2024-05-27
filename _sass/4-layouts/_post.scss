@@ -52,7 +52,7 @@
   min-height: 280px;
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 5px 10px 0px rgba(0,0,0,.15);
+  box-shadow: 0 5px 10px 0px rgba(0, 0, 0, .15);
   background-color: $dark;
 
   @media only screen and (max-width: $tablet) {
@@ -131,6 +131,7 @@
     border: 2px solid $brand-color;
     border-radius: 50%;
     overflow: hidden;
+
     img {
       position: absolute;
       top: 0;
@@ -144,6 +145,7 @@
   &-link {
     font-size: 13px;
     color: $white;
+
     &:hover {
       color: $white;
     }
@@ -157,8 +159,10 @@
 .post__content,
 .page__content {
   color: $gray;
+
   a {
     border-bottom: 2px solid rgba($text-color, .1);
+
     &:hover {
       border-color: $brand-color;
       color: $text-color;
@@ -189,15 +193,19 @@
       font-size: 20px;
       color: $text-color;
       transition: all .2s;
+
       &:first-child {
         padding-left: 48px;
+
         &::after {
           content: none;
         }
       }
+
       &:last-child {
         padding-right: 48px;
       }
+
       &::after {
         content: "";
         position: absolute;
@@ -207,6 +215,7 @@
         height: 12px;
         background: rgba($text-color, .08);
       }
+
       &:hover {
         color: $brand-color;
       }
@@ -215,13 +224,15 @@
 
   @media only screen and (max-width: $mobile) {
     margin: 48px 0;
-    
+
     .share__list {
       .share__link {
         padding: 24px 20px;
+
         &:first-child {
           padding-left: 40px;
         }
+
         &:last-child {
           padding-right: 40px;
         }
@@ -235,7 +246,7 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 64px;
-  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.5);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
   border-radius: 16px;
 
   .prev,
@@ -247,7 +258,7 @@
   .next img {
     border-radius: 0 16px 16px 0;
   }
-  
+
 
   .prev, .next {
     position: relative;
@@ -262,6 +273,7 @@
     background-repeat: no-repeat;
     background-color: $dark;
     user-select: none;
+
     &::after {
       content: "";
       display: block;
@@ -274,6 +286,7 @@
       pointer-events: none;
       transition: .25s;
     }
+
     &:hover {
       &::after {
         background-color: rgba($dark, 0.7);
@@ -320,6 +333,7 @@
       margin-bottom: 0;
       font-size: 24px;
       line-height: 1;
+
       a {
         color: $text-color;
       }
@@ -338,7 +352,7 @@
     .prev, .next {
       width: 100%;
       border-radius: 16px;
-      box-shadow: 0 5px 10px 0 rgba(0,0,0,0.5);
+      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
 
       img {
         border-radius: 16px;
@@ -370,6 +384,7 @@
     font-size: 24px;
     line-height: 1;
     color: $white;
+
     &::after {
       content: "";
       position: absolute;
@@ -383,6 +398,7 @@
       border-radius: 4px 0px 0px 4px;
       background: linear-gradient(90deg, $brand-color -5.19%, rgba($background-color, 0) 100%);;
     }
+
     @media only screen and (max-width: $desktop) {
       font-size: 24px;
     }

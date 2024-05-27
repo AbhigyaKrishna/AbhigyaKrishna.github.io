@@ -14,9 +14,11 @@
   color: $light-gray;
   background: $blue-dark;
   transition: border-color .2s ease-in-out;
+
   &::placeholder {
     color: $white;
   }
+
   &:focus {
     border-color: $brand-color;
   }

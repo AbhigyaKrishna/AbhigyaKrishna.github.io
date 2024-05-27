@@ -8,25 +8,37 @@ image: '/images/50.jpg'
 {% include toc.html %}
 
 * g
-{:toc}
+  {:toc}
 
-A paragraph looks like this — dolor amet cray stumptown fingerstache neutra food truck seitan poke cardigan waistcoat VHS snackwave celiac hella. Godard seitan shoreditch flexitarian next level trust fund man braid vegan listicle keytar bitters. Disrupt cray fashion axe unicorn lomo shaman poke glossier keffiyeh snackwave austin tattooed seitan hexagon lo-fi. Lumbersexual irony vaporware, butcher shaman.
+A paragraph looks like this — dolor amet cray stumptown fingerstache neutra food truck seitan poke cardigan waistcoat
+VHS snackwave celiac hella. Godard seitan shoreditch flexitarian next level trust fund man braid vegan listicle keytar
+bitters. Disrupt cray fashion axe unicorn lomo shaman poke glossier keffiyeh snackwave austin tattooed seitan hexagon
+lo-fi. Lumbersexual irony vaporware, butcher shaman.
 
 ***
 
 ## Headings by default:
 
 # H1 For example
+
 ## H2 For example
+
 ### H3 For example
+
 #### H4 For example
+
 ##### H5 For example
+
 ###### H6 For example
 
 {% highlight markdown %}
+
 ## Heading first level
+
 ### Heading second level
+
 #### Heading third level
+
 {% endhighlight %}
 
 ***
@@ -42,9 +54,10 @@ A paragraph looks like this — dolor amet cray stumptown fingerstache neutra fo
 5. Salvia mumblecore brunch iPhone migas.
 
 {% highlight markdown %}
+
 1. Order list item 1
 2. Order list item 1
-{% endhighlight %}
+   {% endhighlight %}
 
 ***
 
@@ -57,9 +70,10 @@ A paragraph looks like this — dolor amet cray stumptown fingerstache neutra fo
 * Pug you probably haven't heard of them air plant man bun.
 
 {% highlight markdown %}
+
 * Unordered list item 1
 * Unordered list item 2
-{% endhighlight %}
+  {% endhighlight %}
 
 ***
 
@@ -83,31 +97,33 @@ A paragraph looks like this — dolor amet cray stumptown fingerstache neutra fo
 
 #### A quote looks like this:
 
-> The longer I live, the more I realize that I am never wrong about anything, and that all the pains I have so humbly taken to verify my notions have only wasted my time!
+> The longer I live, the more I realize that I am never wrong about anything, and that all the pains I have so humbly
+> taken to verify my notions have only wasted my time!
 >
 > <cite>George Bernard Shaw</cite>
 
 {% highlight html %}
-> The longer I live, the more I realize that I am never wrong about anything, and that all the pains I have so humbly taken to verify my notions have only wasted my time!
+> The longer I live, the more I realize that I am never wrong about anything, and that all the pains I have so humbly
+> taken to verify my notions have only wasted my time!
 >
 > <cite>George Bernard Shaw</cite>
-{% endhighlight %}
+> {% endhighlight %}
 
 ***
 
 ## Syntax Highlighter
 
 {% highlight js %}
-  $('.top').click(function () {
-    $('html, body').stop().animate({ scrollTop: 0 }, 'slow', 'swing');
-  });
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > $(window).height()) {
-      $('.top').addClass("top-active");
-    } else {
-      $('.top').removeClass("top-active");
-    };
-  });
+$('.top').click(function () {
+$('html, body').stop().animate({ scrollTop: 0 }, 'slow', 'swing');
+});
+$(window).scroll(function () {
+if ($(this).scrollTop() > $(window).height()) {
+$('.top').addClass("top-active");
+} else {
+$('.top').removeClass("top-active");
+};
+});
 {% endhighlight %}
 
 ***
@@ -150,8 +166,8 @@ A paragraph looks like this — dolor amet cray stumptown fingerstache neutra fo
 *Minimalism*
 
 {% highlight markdown %}
-  ![]({{site.baseurl}}/images/140.jpg)
-  *Minimalism*
+![]({{site.baseurl}}/images/140.jpg)
+*Minimalism*
 {% endhighlight %}
 
 ***
@@ -161,7 +177,7 @@ A paragraph looks like this — dolor amet cray stumptown fingerstache neutra fo
 <p><iframe src="https://www.youtube.com/embed/Hd1_EXhr_fg" frameborder="0" allowfullscreen></iframe></p>
 
 {% highlight html %}
-  <iframe src="https://www.youtube.com/embed/Hd1_EXhr_fg" frameborder="0" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/Hd1_EXhr_fg" frameborder="0" allowfullscreen></iframe>
 {% endhighlight %}
 
 ## Vimeo Embed
@@ -169,7 +185,7 @@ A paragraph looks like this — dolor amet cray stumptown fingerstache neutra fo
 <p><iframe src="https://player.vimeo.com/video/107654760" width="640" height="360" frameborder="0" allowfullscreen></iframe></p>
 
 {% highlight html %}
-  <iframe src="https://player.vimeo.com/video/107654760" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/107654760" width="640" height="360" frameborder="0" allowfullscreen></iframe>
 {% endhighlight %}
 
 ***

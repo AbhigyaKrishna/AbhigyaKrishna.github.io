@@ -37,11 +37,9 @@
     4.4-Contact Page
 <<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 
-
 @import '0-settings/variables';
 @import '0-settings/mixins';
 @import '0-settings/helpers';
-
 
 /* =======================
 :: 1-Tools and Libs
@@ -61,13 +59,11 @@
 /* >>>>>>>>>>>>>> :: 1.7-Animate <<<<<<<<<<<<<<< */
 @import '1-tools/animate';
 
-
 /* =======================
 :: 2-Base Styles
 ======================= */
 /* >>>>>>>>>>>>>> :: 2.1-Base <<<<<<<<<<<<<<< */
 @import '2-base/base';
-
 
 /* =======================
 :: 3-Modules
@@ -88,7 +84,6 @@
 @import '3-modules/social-links';
 /* >>>>>>>>>>>>>> :: 3.8-Buttons <<<<<<<<<<<<<<< */
 @import '3-modules/buttons';
-
 
 /* =======================
 :: 4-Layouts

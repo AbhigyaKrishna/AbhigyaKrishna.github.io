@@ -27,9 +27,10 @@
   min-height: 664px;
   user-select: none;
   background-color: $dark;
+
   img {
     position: absolute;
-    top: 0px;
+    top: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -52,7 +53,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   z-index: 1;
   width: 100%;
   max-width: 650px;
@@ -84,17 +85,20 @@
 /* Hero Withou Image */
 .hero-without-image {
   margin: 192px 0 96px;
+
   .hero-inner {
     display: flex;
     align-items: center;
     justify-content: center;
   }
+
   .hero-content {
     width: 100%;
     max-width: 650px;
     padding: 0 20px;
     text-align: center;
   }
+
   @media only screen and (max-width: $mobile) {
     margin: 144px 0 48px;
   }

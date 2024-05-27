@@ -13,6 +13,7 @@
   color: $white;
   transition: all 0.2s ease;
   cursor: pointer;
+
   &:hover {
     color: $white;
   }
@@ -23,6 +24,7 @@
     font-weight: 700;
     line-height: 1;
     background-color: $blue-dark;
+
     &:hover {
       color: $dark;
       background-color: darken($brand-color, 5%);

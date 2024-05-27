@@ -19,7 +19,7 @@ author:
 hero:
   title: Abhigya Krishna
   description: Backend, Cloud and Devops Engineer
-  image: '/images/01.jpg'
+  image: '/images/home-background.webp'
 
 
 #-------------------------------
@@ -82,9 +82,9 @@ include:
   - _pages
 
 # Tags
-tag_page_dir:         tag
-tag_page_layout:      tag_page
-tag_permalink_style:  pretty
+tag_page_dir: tag
+tag_page_layout: tag_page
+tag_permalink_style: pretty
 
 sass:
   sass_dir: _sass
