@@ -19,17 +19,15 @@ author:
 hero:
   title: Abhigya Krishna
   description: Backend, Cloud and Devops Engineer
-  image: 'https://media.licdn.com/dms/image/D5603AQEOcbAFIY6wFg/profile-displayphoto-shrink_800_800/0/1711817757493?e=1722470400&v=beta&t=dkyAPkpiPkvmQn9kUCohbrc4p9NwNv7aJgYdLOORZGs'
+  image: '/images/01.jpg'
 
 
 #-------------------------------
 # Contact Settings
+# https://formspree.io/
 contact:
   email: abhigyakrishna21@gmail.com
   description: Have any question, suggestion or just want to say hi? Feel free to reach out to me.
-
-# NOTE
-# Norlin theme comes with a contact form built-in. You can use this form with Formspree (https://formspree.io/) service and get up to 50 submissions for free. Also, you can easily switch to another service if you want.
 
 
 #-------------------------------
@@ -65,7 +63,7 @@ permalink: pretty
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
-  - jekyll/tagging
+  - jekyll-tagging
 
 kramdown:
   parse_block_html: true
