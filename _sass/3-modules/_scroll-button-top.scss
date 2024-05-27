@@ -18,7 +18,7 @@
     color: $dark;
     background: $brand-color;
   }
-
+  
   &.is-active {
     right: 30px;
   }
@@ -27,7 +27,6 @@
 @media only screen and (max-width: $tablet) {
   .top {
     bottom: 15px;
-
     &.is-active {
       right: 25px;
     }
