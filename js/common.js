@@ -49,7 +49,7 @@ $(document).ready(function() {
   }
 
   $('.search, .search__box').on('click keyup', function (event) {
-    if (event.target == this || event.keyCode == 27) {
+    if (event.target === this || event.keyCode === 27) {
       $('.search').removeClass('is-visible');
     }
   });
