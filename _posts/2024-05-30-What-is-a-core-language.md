@@ -52,7 +52,8 @@ Compiled languages are generally faster than interpreted languages because they 
 Interpreted languages are slower than compiled languages because they are compiled at runtime. But they are platform independent and easier to use. For example, a python code written on windows will run on Linux without any changes.
 
 # Statically Typed vs Dynamically Typed Languages
-Statically Typed languages are languages in which the type of variable is known at compile time. When we declare a variable, we have to specify the type of the variable. The variables of a specific type can only store values of that type. For example, C, C++, Java, Rust, etc.\
+Statically Typed languages are languages in which the type of variable is known at compile time. When we declare a variable, we have to specify the type of the variable. The variables of a specific type can only store values of that type. For example, C, C++, Java, Rust, etc.
+
 Dynamically Typed languages are languages in which the type of variable is inferred at runtime. The variables can store values of any type. The functions which gets called on these variables are also inferred at runtime. Some of the dynamically typed languages are Python, JavaScript and Ruby.
 Most of the interpreted languages are dynamically typed languages as we do not have to care about performance and memory management. The memory and performance overhead of these languages are significant at the cost of ease of use.
 
@@ -91,8 +92,10 @@ For Python, it's a straight forward code:
 5. **Refining concepts**: It will help you build up many concepts which gets abstracted away in other languages. For example, OOPS concepts, sequence pattern, reactive programming, etc. By excessive usage of helper functions from the standard library, we tend to rely on them and never try to venture under the hood.
 6. **Ease of learning other languages**: Once you have mastered a core language, learning other languages becomes easier. You will be able to understand the syntax and semantics of other languages better. Breaking into a new language seems familiar and easier as we already know the underlying technologies and concepts.
 
-##### Now the question arises, which core language should I pick?
-The answer to this is not simple. It depends on your interest and the domain you want to work in. If you are interested in working with low-level bare bone language, you should prefer C or C++ accordingly. My personal choice was Java as it is a high-level language, and I was interested in building applications.
-It turned out to be a good choice as I get to learn many paradigms and design patterns which aren't possible on C++ or C. Java for the most part was versatile as I could implement anything due to it being a high-level language. It had helper functions when needed but not too much of them.\
-Rust is also a good choice but shouldn't be considered by beginners as it is a very complex language. It is a low-level language with high-level abstractions. It is a very powerful language but has a steep learning curve. Rust has one of the best programming paradigm and code structure.\
+### Now the question arises, which core language should I pick?
+The answer to this is not simple. If you are interested in working with low-level bare bone language, you should prefer C or C++ accordingly. My personal choice was Java as it is a high-level language, and I was interested in building applications.
+It turned out to be a good choice as I get to learn many paradigms and design patterns which aren't possible on C++ or C. Java for the most part was versatile as I could implement anything due to it being a high-level language. It had helper functions when needed but not too much of them.
+
+Rust is also a good choice but shouldn't be considered by beginners as it is a very complex language. It is a low-level language with high-level abstractions. It is a very powerful language but has a steep learning curve. Rust has one of the best programming paradigm and code structure.
+
 For choosing a language to master, it should be more about what and how much I want to learn rather than what is the best language to learn. Every language has its own pros and cons. Switching to a new language is not a bug deal if you have mastered one. The basics for the most part are same but what really matters is the programming patterns and paradigms.
