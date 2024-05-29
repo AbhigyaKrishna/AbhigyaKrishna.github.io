@@ -16,7 +16,8 @@ Before we dive into the details, let's understand so key concepts about language
 # Compiled language vs Interpreted language
 A compiled languages is a language that is converted into machine code before execution. Let's take an example of Java. Java is a high level compiled language which means it is first compiled into machine code known as java bytecode.
 Then we use the compiled code saved in the output file to run the program. For compiling the code, we use a program called compiler. In this case, we use `javac` (Java Compiler) to compile our code. Some of the examples for compiled languages are
-C, C++, Java, Rust, etc.\
+C, C++, Java, Rust, etc.
+
 For reference here is a java code snippet:
 ```java
 public class HelloWorld {
@@ -48,7 +49,8 @@ A JIT compiler runs after the program has started and compiles the code (usually
 A JIT has access to dynamic runtime information whereas a standard compiler doesn't and can make better optimizations like inlining functions that are used frequently. Java also uses JIT compiler to compile the bytecode into machine code.
 
 ### Pros and Cons of Compiled and Interpreted languages
-Compiled languages are generally faster than interpreted languages because they are precompiled into machine code. But the compiled code is platform dependent. For example, a compiled code of C++ for windows will not run on Linux. The Java bytecode is platform independent, but it needs a JVM (Java Virtual Machine) to run the code.\
+Compiled languages are generally faster than interpreted languages because they are precompiled into machine code. But the compiled code is platform dependent. For example, a compiled code of C++ for windows will not run on Linux. The Java bytecode is platform independent, but it needs a JVM (Java Virtual Machine) to run the code.
+
 Interpreted languages are slower than compiled languages because they are compiled at runtime. But they are platform independent and easier to use. For example, a python code written on windows will run on Linux without any changes.
 
 # Statically Typed vs Dynamically Typed Languages
@@ -61,7 +63,7 @@ Most of the interpreted languages are dynamically typed languages as we do not h
 If we talk about mastering a language, you should always start with a core language. By mastering a language, I mean to say that you should be familiar not only with the basics but every nooks and crannies of the languages.
 Here are some of the reasons why you should start with a core language:
 1. **Understanding of language ecosystem**: A core language is the foundation of a language ecosystem. If you master a core language, you will be able to understand the language ecosystem better. You will be able to understand the libraries, frameworks, and tools built around the language.
-2. **Beauty of not abstracting away major code concepts**: A core language has minimal abstraction and helper functions in its core library. On the other hand, other languages tends to abstract away code concepts for the purpose of ease of use. Let's use and example to understand it better.\
+2. **Beauty of not abstracting away major code concepts**: A core language has minimal abstraction and helper functions in its core library. On the other hand, other languages tends to abstract away code concepts for the purpose of ease of use. Let's use an example to understand it better.\
 Let's look at a very simple concept of reading a file.\
 For Python, it's a straight forward code:
     ```py
