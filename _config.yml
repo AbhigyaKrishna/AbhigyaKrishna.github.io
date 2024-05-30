@@ -67,7 +67,9 @@ plugins:
 
 kramdown:
   input: GFM
-  footnote_backlink: "&#8617;&#xfe0e;"
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    disable: true
 
 paginate: 8
 paginate_path: "/page/:num"
