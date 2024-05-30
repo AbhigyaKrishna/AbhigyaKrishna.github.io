@@ -28,7 +28,7 @@ public class HelloWorld {
 ```
 
 The equivalent java bytecode for the main function will somewhat look like this:
-```
+```text
 DEFINE PUBLIC STATIC main([Ljava/lang/String; 0)V
 A:
 LINE A 3
