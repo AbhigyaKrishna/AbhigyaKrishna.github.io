@@ -69,7 +69,6 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
   syntax_highlighter_opts:
-    css_class: 'highlight'
     disable: true
 
 paginate: 8
