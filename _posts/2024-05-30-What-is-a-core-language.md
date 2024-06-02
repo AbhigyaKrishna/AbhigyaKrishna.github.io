@@ -11,10 +11,10 @@ A core language is a language that is most primitive in nature. It neither very 
 These languages do not contain too many helper functions/classes in their standard library. They are designed to be simple, robust and fast. They are the foundation of a language ecosystem.
 Libraries of these languages consist of basic constructs like file handling, networking, and data structures but enough to build an application with ease.
 
-Before we dive into the details, let's understand so key concepts about languages.
+Before we dive into the details, let's understand some key concepts about languages.
 
 # Compiled language vs Interpreted language
-A compiled languages is a language that is converted into machine code before execution. Let's take an example of Java. Java is a high level compiled language which means it is first compiled into machine code known as java bytecode.
+A compiled languages is a language that is converted into machine code before execution. Let's take an example of Java. Java is a high level compiled language which means it is first compiled into java bytecode before getting executed.
 Then we use the compiled code saved in the output file to run the program. For compiling the code, we use a program called compiler. In this case, we use `javac` (Java Compiler) to compile our code. Some of the examples for compiled languages are
 C, C++, Java, Rust, etc.
 
@@ -63,9 +63,11 @@ Most of the interpreted languages are dynamically typed languages as we do not h
 If we talk about mastering a language, you should always start with a core language. By mastering a language, I mean to say that you should be familiar not only with the basics but every nooks and crannies of the languages.
 Here are some of the reasons why you should start with a core language:
 1. **Understanding of language ecosystem**: A core language is the foundation of a language ecosystem. If you master a core language, you will be able to understand the language ecosystem better. You will be able to understand the libraries, frameworks, and tools built around the language.
-2. **Beauty of not abstracting away major code concepts**: A core language has minimal abstraction and helper functions in its core library. On the other hand, other languages tends to abstract away code concepts for the purpose of ease of use. Let's use an example to understand it better.\
-Let's look at a very simple concept of reading a file.\
-For Python, it's a straight forward code:
+2. **Beauty of not abstracting away major code concepts**: A core language has minimal abstraction and helper functions in its core library. On the other hand, other languages tends to abstract away code concepts for the purpose of ease of use. Let's use an example to understand it better.
+
+    Let's look at a very simple concept of reading a file.
+
+    For Python, it's a straight forward code:
     ```py
     with open('file.txt', 'r') as file:
         data = file.read()
@@ -100,4 +102,4 @@ It turned out to be a good choice as I get to learn many paradigms and design pa
 
 Rust is also a good choice but shouldn't be considered by beginners as it is a very complex language. It is a low-level language with high-level abstractions. It is a very powerful language but has a steep learning curve. Rust has one of the best programming paradigm and code structure.
 
-For choosing a language to master, it should be more about what and how much I want to learn rather than what is the best language to learn. Every language has its own pros and cons. Switching to a new language is not a bug deal if you have mastered one. The basics for the most part are same but what really matters is the programming patterns and paradigms.
+For choosing a language to master, it should be more about what and how much I want to learn rather than what is the best language to learn. Every language has its own pros and cons. Switching to a new language is not a big deal if you have mastered one. The basics for the most part are same but what really matters is the programming patterns and paradigms.
