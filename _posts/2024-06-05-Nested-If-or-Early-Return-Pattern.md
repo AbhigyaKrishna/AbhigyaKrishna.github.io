@@ -6,7 +6,7 @@ date: 2024-06-07 07:34 +0530
 image: '/images/if-else.png'
 tags: [Programming, Concept]
 ---
-As we learn programming, we are introduced to the concept of `if-else` statements and how we can use them to write decision code. 
+As we learn programming, we are introduced to the concept of `if-else` statements and how we can use them to write conditional code. 
 We are also taught about nested `if-else` and `else-if` ladder to write complex decision-making code. It's all fun and games until we start writing complex code which requires multiple nested `if-else` statements.
 
 # The Problem
@@ -119,7 +119,7 @@ A guard clause is a conditional statement that is used to check for conditions t
 This concept is the basis for the “return early” rule. While failing fast, the code is more robust because of the initial focus in finding the conditions where the code execution can terminate.
 
 ##### [Bouncer Pattern](https://wiki.c2.com/?BouncerPattern=)
-The Bouncer Pattern is a method to validate certain conditions by throwing an exception. For example, nullability checks and range check.
+The Bouncer Pattern is a method to validate certain conditions by throwing an exception. For example, nullability checks and range checks.
 ```java
 public void doSomething(String id, Object value, int index) {
     if (id == null) {
