@@ -11,80 +11,81 @@ tags: [Cloud, DevOps, AWS, Infrastructure]
 
 > "The cloud is not about how you build infrastructure. It's about how you use the flexibility it provides."
 
-In today's technology-driven world, cloud computing has transformed from a buzzword into the foundation of modern IT infrastructure. But beneath the marketing hype lies a powerful concept that is revolutionizing how businesses operate and scale.
+Let's face it – in today's fast-paced digital world, [**cloud computing**](https://aws.amazon.com/what-is-cloud-computing/) has evolved from just another tech buzzword into the very **foundation** of modern IT infrastructure. Look beyond the marketing hype, and you'll discover a truly *powerful concept* that's completely changing **how businesses operate and scale** their technology.
 
 ## The Power of Cloud Computing
 
-Cloud computing provides on-demand access to computing resources—everything from applications to data centers—over the internet on a pay-for-use basis. This shift from capital expenditure to operational expenditure has made enterprise-grade technology accessible to businesses of all sizes, democratizing access to advanced infrastructure.
+Think about it – cloud computing gives you ***on-demand access*** to computing resources whenever you need them. Need applications? Data centers? It's all available over the internet, and you only **pay for what you use**. Remember the days of massive upfront server investments? That's history! This clever shift from [*capital expenditure* to *operational expenditure*](https://aws.amazon.com/blogs/aws/reducing-capital-expenditures-with-aws/) has democratized access to enterprise-grade technology, making it **accessible to businesses of all sizes**. Even small startups can now leverage the same advanced infrastructure that was once the exclusive domain of tech giants.
 
 ### Understanding IaaS: The Foundation of Cloud Architecture
 
-Among the three main service models of cloud computing (SaaS, PaaS, and IaaS), **Infrastructure as a Service (IaaS)** represents the most fundamental layer. IaaS provides the essential building blocks for cloud IT:
+You've probably heard about the "cloud service models" – ([SaaS](https://aws.amazon.com/what-is-saas/), [PaaS](https://aws.amazon.com/what-is-paas/), and [**IaaS**](https://aws.amazon.com/what-is/iaas/)). While they're all important, let's focus on ***Infrastructure as a Service (IaaS)*** – it's truly the **most fundamental layer** of them all. Think of IaaS as providing the *essential building blocks* for your cloud IT – the digital equivalent of the concrete, steel, and electrical systems of a physical building:
 
 | Resource Type | What You Get | Traditional Equivalent |
 |---------------|-------------|------------------------|
-| **Compute** | Virtual machines with configurable CPU and RAM | Physical servers in a data center |
-| **Storage** | Block, object, and file storage options | SANs, NAS devices, and disk arrays |
-| **Networking** | Virtual networks, subnets, IP addresses, load balancers | Routers, switches, firewalls, and load balancers |
-| **Security** | Identity management, access control, encryption | Physical security, firewalls, and network policies |
+| **[Compute](https://aws.amazon.com/products/compute/)** | *Virtual machines* with configurable CPU and RAM | Physical servers in a data center |
+| **[Storage](https://aws.amazon.com/products/storage/)** | [*Block*](https://aws.amazon.com/ebs/), [*object*](https://aws.amazon.com/s3/), and [*file storage*](https://aws.amazon.com/efs/) options | SANs, NAS devices, and disk arrays |
+| **[Networking](https://aws.amazon.com/products/networking/)** | [*Virtual networks*](https://aws.amazon.com/vpc/), subnets, IP addresses, [*load balancers*](https://aws.amazon.com/elasticloadbalancing/) | Routers, switches, firewalls, and load balancers |
+| **[Security](https://aws.amazon.com/security/)** | [*Identity management*](https://aws.amazon.com/iam/), access control, [*encryption*](https://aws.amazon.com/kms/) | Physical security, firewalls, and network policies |
 
-IaaS offers the highest level of flexibility and management control over your IT resources. Rather than purchasing hardware outright, you rent exactly what you need, when you need it, and scale up or down as demand changes—all while maintaining complete control over the configuration and management of your infrastructure.
+Here's what makes IaaS so powerful: it offers you the **highest level of flexibility** and **management control** over your IT resources. Instead of dropping a fortune on hardware that might be obsolete next year, you can *rent exactly what you need, precisely when you need it*. Need more power during holiday shopping season? **Scale up**. Slower summer months? **Scale down**. All this flexibility while still maintaining *complete control* over how everything is configured and managed. It's your infrastructure, just without the headaches of physical ownership.
 
 ### AWS: The Pioneer of Cloud IaaS
 
-When discussing IaaS providers, **Amazon Web Services (AWS)** stands out as both a pioneer and industry leader. With its launch in 2006, AWS fundamentally changed how businesses approach IT infrastructure, offering:
+Let's talk about the elephant in the room when it comes to IaaS providers – **[Amazon Web Services (AWS)](https://aws.amazon.com/)**. AWS isn't just another player; they're the **pioneer** who blazed the trail and remain the **industry leader** today. When AWS launched back in 2006, they didn't just enter the market – they *fundamentally changed* the entire game of how businesses approach IT infrastructure. Look at what they bring to the table:
 
-- Over 200 fully featured services accessible globally
-- Presence in 27 geographic regions with 87 availability zones
-- Comprehensive security capabilities and compliance certifications
-- Unmatched scale and reliability for businesses of all sizes
+- An incredible lineup of over **200 fully featured** [services](https://aws.amazon.com/products/) you can access from practically *anywhere on Earth*
+- A massive global footprint spanning [**27 geographic regions**](https://aws.amazon.com/about-aws/global-infrastructure/) with **87** [*availability zones*](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/) – meaning your applications can be closer to your users
+- Rock-solid [*security capabilities*](https://aws.amazon.com/security/) and [*compliance certifications*](https://aws.amazon.com/compliance/programs/) that let you sleep at night
+- **Unmatched scale and reliability** whether you're a scrappy startup or a Fortune 500 giant
 
-In this comprehensive guide, we'll explore how to leverage AWS's powerful IaaS offerings to build robust, scalable, and cost-effective cloud solutions that can transform your infrastructure capabilities.
+Ready to dive in? Throughout this **comprehensive guide**, I'll show you how to harness AWS's *powerful IaaS offerings* to build cloud solutions that are **robust**, **scalable**, and **cost-effective** – the kind that can truly *transform* what your infrastructure can do.
 
 ## What We'll Cover
 
 | Section | Key Learning |
 |---------|-------------|
-| **Deploying Web Applications** | Building scalable infrastructure with EC2, ALB, and ASG |
-| **Path-Based Routing** | Directing traffic to different services using ALB rules |
-| **Advanced Networking** | Implementing private/public subnets with secure bastion access |
-| **Domain Configuration** | Setting up end-to-end routing for multi-port applications |
-| **Cross-Account VPC Peering** | Establishing secure connectivity between AWS accounts |
-| **EBS & AMI Management** | Creating snapshots and images for data persistence |
-| **IAM Policy Creation** | Implementing fine-grained access control for EC2 |
-| **S3 Bucket Operations** | Managing storage using AWS CLI |
+| **Deploying Web Applications** | Building scalable infrastructure with [EC2](https://aws.amazon.com/ec2/), [ALB](https://aws.amazon.com/elasticloadbalancing/application-load-balancer/), and [ASG](https://aws.amazon.com/ec2/autoscaling/) |
+| **Path-Based Routing** | Directing traffic to different services using [ALB rules](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/listener-update-rules.html) |
+| **Advanced Networking** | Implementing [private/public subnets](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Subnets.html) with secure [bastion access](https://aws.amazon.com/quickstart/architecture/linux-bastion/) |
+| **Domain Configuration** | Setting up end-to-end routing for multi-port applications with [Route 53](https://aws.amazon.com/route53/) |
+| **Cross-Account VPC Peering** | Establishing secure [connectivity between AWS accounts](https://docs.aws.amazon.com/vpc/latest/peering/vpc-peering-basics.html) |
+| **EBS & AMI Management** | Creating [snapshots](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSSnapshots.html) and [images](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html) for data persistence |
+| **IAM Policy Creation** | Implementing [fine-grained access control](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html) for EC2 |
+| **S3 Bucket Operations** | Managing storage using [AWS CLI](https://aws.amazon.com/cli/) |
 
 ## Deploying a Web Application on AWS
 
-> ### What You'll Learn
-> - Setting up EC2 instances and installing web server software
-> - Creating an Application Load Balancer for traffic distribution
-> - Configuring Auto Scaling Groups to automatically adjust capacity
-> - Testing and verifying scaling behavior under load
+### What You'll Learn
 
-In this section, we'll build a resilient and scalable web application infrastructure on AWS by combining multiple IaaS components to create a robust architecture that automatically adjusts to traffic demands.
+* Setting up [EC2 instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html) and installing web server software
+* Creating an [Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/introduction.html) for traffic distribution
+* Configuring [Auto Scaling Groups](https://docs.aws.amazon.com/autoscaling/ec2/userguide/AutoScalingGroup.html) to automatically adjust capacity
+* Testing and verifying [scaling behavior](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scale-based-on-demand.html) under load
+
+In this section, we're going to roll up our sleeves and build something special – a truly **resilient** and **scalable** web application infrastructure on AWS. We'll bring together *multiple IaaS components* like pieces of a puzzle to create a **robust architecture** that doesn't just handle traffic but *automatically adjusts* to demands. No more late-night scrambles when your site hits the front page of Reddit!
 
 ### Key Concepts
 
 | Concept | Description |
 |---------|-------------|
-| **EC2 (Elastic Compute Cloud)** | Virtual servers in the cloud that provide resizable compute capacity |
-| **ALB (Application Load Balancer)** | Distributes incoming application traffic across multiple targets |
-| **ASG (Auto Scaling Group)** | Maintains application availability by automatically adding or removing EC2 instances |
-| **AMI (Amazon Machine Image)** | Pre-configured templates used for EC2 instance creation |
-| **Launch Template** | Contains configuration information to launch instances in an ASG |
+| **[EC2 (Elastic Compute Cloud)](https://aws.amazon.com/ec2/)** | Virtual servers in the cloud that provide resizable compute capacity |
+| **[ALB (Application Load Balancer)](https://aws.amazon.com/elasticloadbalancing/application-load-balancer/)** | Distributes incoming application traffic across multiple targets |
+| **[ASG (Auto Scaling Group)](https://aws.amazon.com/ec2/autoscaling/)** | Maintains application availability by automatically adding or removing EC2 instances |
+| **[AMI (Amazon Machine Image)](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html)** | Pre-configured templates used for EC2 instance creation |
+| **[Launch Template](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-launch-templates.html)** | Contains configuration information to launch instances in an ASG |
 
 ### Task 1: Deploy Web Application on EC2 Instances
 
 **Steps:**
 
 1. **Launch EC2 Instances**:
-   * Navigate to EC2 dashboard > Launch Instances
-   * Select an AMI (e.g., Ubuntu Server 22.04 LTS)
-   * Choose instance type (e.g., `t2.micro`)
-   * Configure network settings (VPC, subnets)
-   * Add security groups (allow HTTP/SSH)
-   * Launch at least two instances with a key pair
+   * Navigate to [EC2 dashboard](https://console.aws.amazon.com/ec2/) > [Launch Instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html)
+   * Select an [AMI](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html) (e.g., [Ubuntu Server 22.04 LTS](https://aws.amazon.com/marketplace/pp/prodview-iftkyuwv2sjxi))
+   * Choose [instance type](https://aws.amazon.com/ec2/instance-types/) (e.g., `t2.micro`)
+   * Configure [network settings](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-instance-addressing.html) (VPC, subnets)
+   * Add [security groups](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security-groups.html) (allow HTTP/SSH)
+   * Launch at least two instances with a [key pair](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html)
 
 2. **Connect and Configure Instances**:
    ```bash
@@ -239,29 +240,30 @@ In this section, we'll build a resilient and scalable web application infrastruc
    * Watch as ASG reduces the number of instances
    * Verify instances are terminated according to policy
 
-This robust architecture ensures your application remains available even during traffic spikes while optimizing costs by automatically reducing capacity during periods of lower demand.
+What have we accomplished? We've built a rock-solid architecture that keeps your application humming along even when traffic suddenly spikes – like when that marketing campaign finally goes viral! And the best part? It optimizes costs by automatically scaling down during quieter periods. No more paying for idle servers at 3 AM!
 
-> **Pro Tip**: Always create EC2 instances across multiple Availability Zones to enhance fault tolerance. If one AZ experiences issues, your application will continue to run from instances in other AZs.
+**Pro Tip**: Always, and I mean always, create your EC2 instances across [multiple Availability Zones](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html). Think of it as not keeping all your eggs in one basket. If one AZ has a hiccup (and yes, it happens!), your application keeps running smoothly from instances in other AZs. Your users won't even notice the difference.
 
 ## Path-based Routing in AWS Application Load Balancer
 
-> ### What You'll Learn
-> - Creating and configuring target groups for different applications
-> - Implementing path-based routing rules in an ALB
-> - Testing and verifying routing configuration  
-> - Managing multiple services behind a single load balancer
+### What You'll Learn
 
-Path-based routing enables you to direct traffic to different backend services based on the URL path of the request. This is particularly useful for hosting microservices or multiple application components behind a single load balancer.
+* Creating and configuring [target groups](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-target-groups.html) for different applications
+* Implementing [path-based routing rules](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-listeners.html#path-conditions) in an ALB
+* Testing and verifying routing configuration  
+* Managing multiple services behind a [single load balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/introduction.html)
+
+Ever wondered how major websites serve different parts of their application from one domain? That's where [**path-based routing**](https://aws.amazon.com/blogs/aws/new-path-based-routing-for-aws-application-load-balancer/) comes in! It's like having a smart traffic cop that *directs visitors* to different backend services based on the **URL path** they're requesting. Want to visit `/api`? You'll be sent to the API servers. Looking for `/blog`? You'll get routed to the blog servers. This approach is incredibly handy when you're running [*microservices*](https://aws.amazon.com/microservices/) or need to manage **multiple application components** while presenting them to users under a single, clean URL.
 
 ### Key Concepts
 
 | Concept | Description |
 |---------|-------------|
-| **Listener** | Process that checks for connection requests using a specified protocol and port |
-| **Target Group** | Group of resources (EC2 instances, containers, IP addresses) that receive traffic |
-| **Routing Rules** | Conditions that determine how requests are forwarded to target groups |
-| **Path Pattern** | URL pattern used to match and route requests to specific target groups |
-| **Rule Priority** | Determines the order in which rules are evaluated (lowest number first) |
+| **[Listener](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-listeners.html)** | Process that checks for connection requests using a specified protocol and port |
+| **[Target Group](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-target-groups.html)** | Group of resources (EC2 instances, containers, IP addresses) that receive traffic |
+| **[Routing Rules](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/listener-update-rules.html)** | Conditions that determine how requests are forwarded to target groups |
+| **[Path Pattern](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-listeners.html#path-conditions)** | URL pattern used to match and route requests to specific target groups |
+| **[Rule Priority](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-listeners.html#rule-priority)** | Determines the order in which rules are evaluated (lowest number first) |
 
 ### Task 1: Configure Load Balancer and Target Groups
 
@@ -362,29 +364,30 @@ Path-based routing enables you to direct traffic to different backend services b
 
 This path-based routing configuration allows you to host multiple applications or services under a single domain name, simplifying your architecture and reducing costs by sharing a single load balancer.
 
-> **Pro Tip**: For production environments, configure HTTPS listeners with SSL/TLS certificates from AWS Certificate Manager and set up an HTTP to HTTPS redirect for improved security.
+**Pro Tip**: If you're setting this up for production (and I hope you are!), don't skip on security. Take a few extra minutes to configure [HTTPS listeners](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/create-https-listener.html) with SSL/TLS certificates from [AWS Certificate Manager](https://aws.amazon.com/certificate-manager/) (they're free!). While you're at it, set up an [HTTP to HTTPS redirect](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-listeners.html#redirect-actions) so your users are always on the secure version of your site. In today's world, encryption isn't optional – it's essential.
 
 ## Advanced AWS Networking and Services
 
-> ### What You'll Learn
-> - Creating secure network architectures with public and private subnets
-> - Setting up secure access to private instances using a bastion host
-> - Implementing NAT Gateway for outbound internet access
-> - Configuring security groups for proper access control
+### What You'll Learn
 
-This section covers advanced networking concepts that form the foundation of secure and scalable AWS infrastructures, focusing on proper network segmentation and secure access patterns.
+* Creating secure network architectures with [public and private subnets](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Scenario2.html)
+* Setting up secure access to private instances using a [bastion host](https://aws.amazon.com/quickstart/architecture/linux-bastion/)
+* Implementing [NAT Gateway](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-gateway.html) for outbound internet access
+* Configuring [security groups](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.html) for proper access control
+
+Now we're going to dive into the really good stuff – the advanced networking concepts that truly form the backbone of secure and scalable [AWS infrastructures](https://aws.amazon.com/architecture/). If you've been following along, you're about to level up your AWS skills with proper [network segmentation](https://aws.amazon.com/answers/networking/aws-multiple-region-network-connectivity/) and secure access patterns. These are the techniques that separate AWS hobbyists from true cloud architects!
 
 ### Key Concepts
 
 | Concept | Description |
 |---------|-------------|
-| **VPC (Virtual Private Cloud)** | Your own isolated section of the AWS cloud |
-| **Subnets** | Segments of your VPC's IP address range with different accessibility levels |
-| **NAT Gateway** | Allows instances in private subnets to access the internet while preventing inbound access |
-| **Internet Gateway** | Enables communication between your VPC and the internet |
-| **Route Tables** | Control the traffic flow within your VPC and to external networks |
-| **Security Groups** | Virtual firewalls that control inbound and outbound traffic at the instance level |
-| **Bastion Host** | A secure instance that serves as a gateway for accessing private resources |
+| **[VPC (Virtual Private Cloud)](https://aws.amazon.com/vpc/)** | Your own isolated section of the AWS cloud |
+| **[Subnets](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Subnets.html)** | Segments of your VPC's IP address range with different accessibility levels |
+| **[NAT Gateway](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-gateway.html)** | Allows instances in private subnets to access the internet while preventing inbound access |
+| **[Internet Gateway](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Internet_Gateway.html)** | Enables communication between your VPC and the internet |
+| **[Route Tables](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Route_Tables.html)** | Control the traffic flow within your VPC and to external networks |
+| **[Security Groups](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.html)** | Virtual firewalls that control inbound and outbound traffic at the instance level |
+| **[Bastion Host](https://aws.amazon.com/quickstart/architecture/linux-bastion/)** | A secure instance that serves as a gateway for accessing private resources |
 
 ### Task 1: Create VPC and Subnet Architecture
 
@@ -505,11 +508,10 @@ This secure network architecture forms the foundation for hosting applications t
 
 ## End-to-End Domain Configuration
 
-> ### What You'll Learn
-> - Registering and configuring a domain name in Route 53
-> - Setting up DNS records to route traffic to your AWS resources in the ap-south-1 region
-> - Implementing HTTPS with AWS Certificate Manager
-> - Creating custom domain endpoints for multi-port applications
+* Registering and configuring a domain name in [Route 53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-register.html)
+* Setting up [DNS records](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/rrsets-working-with.html) to route traffic to your AWS resources in the [ap-south-1 region](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/?p=ngi&loc=4)
+* Implementing [HTTPS with AWS Certificate Manager](https://docs.aws.amazon.com/acm/latest/userguide/acm-overview.html)
+* Creating [custom domain endpoints](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-to-elb-load-balancer.html) for multi-port applications
 
 This section guides you through the complete process of configuring a custom domain for your AWS applications, from registration to secure certificate implementation.
 
@@ -517,12 +519,10 @@ This section guides you through the complete process of configuring a custom dom
 
 | Concept | Description |
 |---------|-------------|
-| **Route 53** | AWS's scalable and highly available DNS web service |
-| **Hosted Zone** | Container for DNS records that define how to route traffic for a domain |
-| **Record Sets** | DNS records including A, CNAME, MX, TXT, etc. |
-| **AWS Certificate Manager (ACM)** | Service for provisioning and managing SSL/TLS certificates |
-| **Alias Record** | Special Route 53 record that routes traffic to AWS resources |
-| **Health Check** | Route 53 feature to monitor endpoint health and route traffic accordingly |
+| **[Record Sets](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/rrsets-working-with.html)** | DNS records including A, CNAME, MX, TXT, etc. |
+| **[AWS Certificate Manager (ACM)](https://aws.amazon.com/certificate-manager/)** | Service for provisioning and managing SSL/TLS certificates |
+| **[Alias Record](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resource-record-sets-choosing-alias-non-alias.html)** | Special Route 53 record that routes traffic to AWS resources |
+| **[Health Check](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failover.html)** | Route 53 feature to monitor endpoint health and route traffic accordingly |
 
 ### Task 1: Register and Configure a Domain
 
@@ -629,11 +629,9 @@ With this end-to-end domain configuration, your AWS applications now have a prof
 
 ## Cross-Account VPC Peering
 
-> ### What You'll Learn
-> - Understanding cross-account networking and its use cases
-> - Creating and accepting VPC peering connections between AWS accounts
-> - Configuring routes and security groups for cross-account access
-> - Testing and validating inter-VPC communication
+* Creating and accepting [VPC peering connections](https://docs.aws.amazon.com/vpc/latest/peering/create-vpc-peering-connection.html) between AWS accounts
+* Configuring [routes](https://docs.aws.amazon.com/vpc/latest/peering/vpc-peering-routing.html) and [security groups](https://docs.aws.amazon.com/vpc/latest/peering/vpc-peering-security-groups.html) for cross-account access
+* Testing and validating [inter-VPC communication](https://docs.aws.amazon.com/vpc/latest/peering/vpc-peering-connectivity-scenarios.html)
 
 Cross-account VPC peering allows you to connect VPCs across different AWS accounts, enabling secure, private communication between resources without traversing the public internet.
 
@@ -641,13 +639,10 @@ Cross-account VPC peering allows you to connect VPCs across different AWS accoun
 
 | Concept | Description |
 |---------|-------------|
-| **VPC Peering** | Direct network connection between two VPCs |
-| **Cross-Account Access** | AWS mechanism for sharing resources across accounts |
-| **CIDR Blocks** | IP address range definitions that must not overlap for peering |
-| **Route Tables** | Control traffic flow between peered VPCs |
-| **Security Groups** | Control instance-level access across peered VPCs |
-| **Transitive Peering** | Not supported in AWS - peering relationships are one-to-one only |
-| **Role Assumption** | AWS IAM mechanism for cross-account authorization |
+| **[Route Tables](https://docs.aws.amazon.com/vpc/latest/peering/vpc-peering-routing.html)** | Control traffic flow between peered VPCs |
+| **[Security Groups](https://docs.aws.amazon.com/vpc/latest/peering/vpc-peering-security-groups.html)** | Control instance-level access across peered VPCs |
+| **[Transitive Peering](https://docs.aws.amazon.com/vpc/latest/peering/invalid-peering-configurations.html)** | Not supported in AWS - peering relationships are one-to-one only |
+| **[Role Assumption](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use.html)** | AWS IAM mechanism for cross-account authorization |
 
 ### Task 1: Prepare VPCs in Both Accounts
 
@@ -768,12 +763,10 @@ Cross-account VPC peering enables you to create advanced multi-account architect
 
 ## EBS Snapshots and AMIs
 
-> ### What You'll Learn
-> - Creating and managing EBS snapshots for data backup
-> - Automating snapshot lifecycle with policies
-> - Building custom AMIs from existing instances
-> - Sharing and copying AMIs across regions and accounts
-> - Using AMIs for consistent and rapid deployments
+* Automating snapshot lifecycle with [policies](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/snapshot-lifecycle.html)
+* Building [custom AMIs](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/creating-an-ami-ebs.html) from existing instances
+* [Sharing](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/sharingamis-explicit.html) and [copying](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/CopyingAMIs.html) AMIs across regions and accounts
+* Using AMIs for [consistent and rapid deployments](https://aws.amazon.com/blogs/compute/query-for-the-latest-amazon-linux-ami-ids-using-aws-systems-manager-parameter-store/)
 
 This section covers essential techniques for data persistence and system replication in AWS, focusing on EBS snapshots for data backup and AMIs for system image management.
 
@@ -781,12 +774,9 @@ This section covers essential techniques for data persistence and system replica
 
 | Concept | Description |
 |---------|-------------|
-| **EBS (Elastic Block Store)** | Persistent block storage volumes for EC2 instances |
-| **Snapshot** | Point-in-time copy of an EBS volume stored in S3 |
-| **AMI (Amazon Machine Image)** | Template containing software configuration (OS, applications, etc.) for instance launch |
-| **Incremental Backup** | Only blocks changed since last snapshot are saved, improving efficiency |
-| **Lifecycle Policy** | Automated management of snapshots creation and deletion |
-| **Golden AMI** | Fully configured AMI that meets organizational standards and security requirements |
+| **[Incremental Backup](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSSnapshots.html#how_snapshots_work)** | Only blocks changed since last snapshot are saved, improving efficiency |
+| **[Lifecycle Policy](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/snapshot-lifecycle.html)** | Automated management of snapshots creation and deletion |
+| **[Golden AMI](https://aws.amazon.com/blogs/awsmarketplace/building-and-maintaining-secure-golden-amis/)** | Fully configured AMI that meets organizational standards and security requirements |
 
 ### Task 1: Create and Manage EBS Snapshots
 
@@ -915,12 +905,10 @@ These backup and image management techniques ensure your data is protected and y
 
 ## Custom IAM Policies
 
-> ### What You'll Learn
-> - Understanding IAM policy components and structure
-> - Creating custom policies for fine-grained EC2 access control
-> - Implementing the principle of least privilege
-> - Using policy conditions for enhanced security
-> - Testing IAM permissions before deployment
+* Creating [custom policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html) for fine-grained EC2 access control
+* Implementing the [principle of least privilege](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#grant-least-privilege)
+* Using [policy conditions](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html) for enhanced security
+* Testing [IAM permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_testing-policies.html) before deployment
 
 This section explores how to create custom IAM policies that provide precise access control to your EC2 resources while maintaining security best practices.
 
@@ -928,14 +916,11 @@ This section explores how to create custom IAM policies that provide precise acc
 
 | Concept | Description |
 |---------|-------------|
-| **IAM (Identity and Access Management)** | AWS service for securely controlling access to resources |
-| **Policy** | Document that defines permissions for IAM identities or resources |
-| **Principal** | Entity allowed or denied access to a resource |
-| **Action** | Specific API operations that can be allowed or denied |
-| **Resource** | AWS service objects that a principal can take action on |
-| **Condition** | Optional restrictions that determine when a policy is in effect |
-| **Effect** | Whether to allow or deny access to the specified resources |
-| **Least Privilege Principle** | Granting only the permissions required to perform a task |
+| **[Action](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_action.html)** | Specific API operations that can be allowed or denied |
+| **[Resource](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_resource.html)** | AWS service objects that a principal can take action on |
+| **[Condition](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html)** | Optional restrictions that determine when a policy is in effect |
+| **[Effect](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_effect.html)** | Whether to allow or deny access to the specified resources |
+| **[Least Privilege Principle](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#grant-least-privilege)** | Granting only the permissions required to perform a task |
 
 ### Task 1: Analyze Access Requirements
 
@@ -1125,12 +1110,10 @@ These custom IAM policies provide fine-grained control over your AWS resources, 
 
 ## S3 Buckets with AWS CLI
 
-> ### What You'll Learn
-> - Installing and configuring the AWS CLI
-> - Creating and managing S3 buckets via command line
-> - Uploading, downloading, and synchronizing files
-> - Setting bucket policies and access controls
-> - Implementing lifecycle policies for cost optimization
+* [Creating and managing S3 buckets](https://docs.aws.amazon.com/cli/latest/reference/s3/index.html) via command line
+* [Uploading, downloading, and synchronizing](https://docs.aws.amazon.com/cli/latest/reference/s3/sync.html) files
+* Setting bucket policies and access controls
+* Implementing lifecycle policies for cost optimization
 
 This section covers how to efficiently manage Amazon S3 storage using the AWS Command Line Interface, providing you with powerful scripting capabilities for automation.
 
