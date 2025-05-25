@@ -73,7 +73,7 @@ kramdown:
     disable: true
 
 mermaid:
-  src: '/js/vendors/mermaid.min.js'
+  src: '/js/vendors/languages/mermaid.min.js'
 
 paginate: 8
 paginate_path: "/page/:num"
