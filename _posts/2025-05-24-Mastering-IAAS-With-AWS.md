@@ -77,8 +77,8 @@ flowchart TD
     EC2_2 -->|Reports Metrics| CloudWatch
     EC2_N -->|Reports Metrics| CloudWatch
 
-    classDef aws fill:#FF9900,stroke:#232F3E,color:white;
-    class ALB,ASG,EC2_1,EC2_2,EC2_N,CloudWatch aws;
+    classDef aws fill:#FF9900,stroke:#232F3E,color:white
+    class User,ALB,ASG,EC2_1,EC2_2,EC2_N,CloudWatch aws
 </pre>
 
 ### Key Concepts
@@ -413,22 +413,22 @@ graph TD
     ALB -->|Path: /api/*| APIRule{API Route Rule}
     ALB -->|Path: /blog/*| BlogRule{Blog Route Rule}
     ALB -->|Path: /admin/*| AdminRule{Admin Route Rule}
-    ALB -->|Path: /* (default)| DefaultRule{Default Rule}
+    ALB -->|Path: /* default| DefaultRule{Default Rule}
     
     APIRule -->|Target Group 1| APIServers[API Servers]
     BlogRule -->|Target Group 2| BlogServers[Blog Servers]
     AdminRule -->|Target Group 3| AdminServers[Admin Dashboard]
     DefaultRule -->|Target Group 4| WebServers[Web Application]
     
-    classDef user fill:#ECEFF1,stroke:#607D8B,color:black;
-    classDef alb fill:#FF9900,stroke:#E65100,color:white;
-    classDef rule fill:#42A5F5,stroke:#0D47A1,color:white;
-    classDef servers fill:#66BB6A,stroke:#2E7D32,color:white;
+    classDef user fill:#ECEFF1,stroke:#607D8B,color:black
+    classDef alb fill:#FF9900,stroke:#E65100,color:white
+    classDef rule fill:#42A5F5,stroke:#0D47A1,color:white
+    classDef servers fill:#66BB6A,stroke:#2E7D32,color:white
     
-    class User user;
-    class ALB,DNS alb;
-    class APIRule,BlogRule,AdminRule,DefaultRule rule;
-    class APIServers,BlogServers,AdminServers,WebServers servers;
+    class User user
+    class ALB,DNS alb
+    class APIRule,BlogRule,AdminRule,DefaultRule rule
+    class APIServers,BlogServers,AdminServers,WebServers servers
 </pre>
 
 ### Key Concepts
