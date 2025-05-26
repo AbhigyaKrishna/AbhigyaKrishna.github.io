@@ -405,61 +405,61 @@
 }
 
 /* Mermaid Diagrams */
-.mermaid {
-  text-align: center;
-  margin: 2rem 0;
-  background-color: #0f0e15;
-  border: 1px solid #333;
-  border-radius: 8px;
-  padding: 1.5rem;
-  overflow-x: auto;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+// .mermaid {
+//   text-align: center;
+//   margin: 2rem 0;
+//   background-color: #0f0e15;
+//   border: 1px solid #333;
+//   border-radius: 8px;
+//   padding: 1.5rem;
+//   overflow-x: auto;
+//   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 
-  svg {
-    max-width: 100%;
-    height: auto;
-    background-color: transparent !important;
-  }
+//   svg {
+//     max-width: 100%;
+//     height: auto;
+//     background-color: transparent !important;
+//   }
 
-  // Allow classDef styling to take precedence, only set defaults
-  text,
-  .label,
-  .node-label,
-  .edge-label {
-    fill: #eeeeee;
-    color: #eeeeee;
-  }
+//   // Allow classDef styling to take precedence, only set defaults
+//   text,
+//   .label,
+//   .node-label,
+//   .edge-label {
+//     fill: #eeeeee;
+//     color: #eeeeee;
+//   }
 
-  // Default stroke for elements that don't have classDef styling
-  .node:not([class*="aws"]):not([class*="user"]):not([class*="alb"]):not([class*="rule"]):not([class*="servers"]) {
-    rect, circle, ellipse, polygon {
-      stroke: #ff7b7b;
-      stroke-width: 2px;
-    }
-  }
+//   // Default stroke for elements that don't have classDef styling
+//   .node:not([class*="aws"]):not([class*="user"]):not([class*="alb"]):not([class*="rule"]):not([class*="servers"]) {
+//     rect, circle, ellipse, polygon {
+//       stroke: #ff7b7b;
+//       stroke-width: 2px;
+//     }
+//   }
 
-  // Ensure text readability without overriding classDef colors
-  .nodeLabel {
-    color: inherit;
-  }
+//   // Ensure text readability without overriding classDef colors
+//   .nodeLabel {
+//     color: inherit;
+//   }
 
-  // Style edges/arrows
-  .edgePath path {
-    stroke: #eeeeee;
-  }
+//   // Style edges/arrows
+//   .edgePath path {
+//     stroke: #eeeeee;
+//   }
 
-  .edgeLabel {
-    background-color: #0f0e15;
-  }
+//   .edgeLabel {
+//     background-color: #0f0e15;
+//   }
 
-  @media only screen and (max-width: $tablet) {
-    margin: 1.5rem 0;
-    padding: 1rem;
-  }
+//   @media only screen and (max-width: $tablet) {
+//     margin: 1.5rem 0;
+//     padding: 1rem;
+//   }
 
-  @media only screen and (max-width: $mobile) {
-    margin: 1rem 0;
-    padding: 0.75rem;
-    font-size: 0.875rem;
-  }
-}
+//   @media only screen and (max-width: $mobile) {
+//     margin: 1rem 0;
+//     padding: 0.75rem;
+//     font-size: 0.875rem;
+//   }
+// }

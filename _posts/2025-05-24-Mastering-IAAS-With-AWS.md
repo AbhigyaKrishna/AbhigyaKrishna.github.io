@@ -65,7 +65,7 @@ Ready to dive in? Throughout this **comprehensive guide**, I'll show you how to 
 
 In this section, we're going to roll up our sleeves and build something special – a truly **resilient** and **scalable** web application infrastructure on AWS. We'll bring together *multiple IaaS components* like pieces of a puzzle to create a **robust architecture** that doesn't just handle traffic but *automatically adjusts* to demands. No more late-night scrambles when your site hits the front page of Reddit!
 
-<div class="mermaid">
+<pre class="mermaid">
 flowchart TD
     User([User]) -->|HTTP Request| ALB[Application Load Balancer]
     ALB -->|Traffic Distribution| ASG{Auto Scaling Group}
@@ -79,7 +79,7 @@ flowchart TD
 
     classDef aws fill:#FF9900,stroke:#232F3E,color:white;
     class ALB,ASG,EC2_1,EC2_2,EC2_N,CloudWatch aws;
-</div>
+</pre>
 
 ### Key Concepts
 
@@ -417,7 +417,7 @@ What have we accomplished? We've built a rock-solid architecture that keeps your
 
 Ever wondered how major websites serve different parts of their application from one domain? That's where [**path-based routing**](https://aws.amazon.com/blogs/aws/new-path-based-routing-for-aws-application-load-balancer/) comes in! It's like having a smart traffic cop that *directs visitors* to different backend services based on the **URL path** they're requesting. Want to visit `/api`? You'll be sent to the API servers. Looking for `/blog`? You'll get routed to the blog servers. This approach is incredibly handy when you're running [*microservices*](https://aws.amazon.com/microservices/) or need to manage **multiple application components** while presenting them to users under a single, clean URL.
 
-<div class="mermaid">
+<pre class="mermaid">
 graph TD
     User([User]) -->|Request| DNS[DNS: app.example.com]
     DNS -->|Routes to| ALB[Application Load Balancer]
@@ -441,7 +441,7 @@ graph TD
     class ALB,DNS alb;
     class APIRule,BlogRule,AdminRule,DefaultRule rule;
     class APIServers,BlogServers,AdminServers,WebServers servers;
-</div>
+</pre>
 
 ### Key Concepts
 
@@ -1008,7 +1008,7 @@ Now we're going to dive into the really good stuff – the advanced networking c
 
 ### Task 1: Create VPC and Subnet Architecture
 
-<div class="mermaid">
+<pre class="mermaid">
 graph TD
     subgraph "secure-vpc (10.0.0.0/16)"
         subgraph "Public Subnet (10.0.1.0/24)"
@@ -1038,7 +1038,7 @@ graph TD
     class BH,IGW,NAT public;
     class APP,DB private;
     class Internet,Admin external;
-</div>
+</pre>
 
 **Steps:**
 
@@ -1359,7 +1359,7 @@ This secure network architecture forms the foundation for hosting applications t
 
 This section guides you through the complete process of configuring a custom domain for your AWS applications, from registration to secure certificate implementation.
 
-<div class="mermaid">
+<pre class="mermaid">
 graph TD
     User([Internet User]) -->|"1. DNS Query<br>example.com"| DNS[DNS Resolvers]
     DNS -->|"2. Get NS Records"| Root[Root DNS Servers]
@@ -1404,7 +1404,7 @@ graph TD
     class Cert dns;
     class ALB,API,CF endpoints;
     class Web,Lambda,S3 backends;
-</div>
+</pre>
 
 ### Key Concepts
 
@@ -1722,7 +1722,7 @@ With this end-to-end domain configuration, your AWS applications now have a prof
 
 Cross-account VPC peering allows you to connect VPCs across different AWS accounts, enabling secure, private communication between resources without traversing the public internet.
 
-<div class="mermaid">
+<pre class="mermaid">
 graph TB
     subgraph "AWS Account A"
         VPC_A["VPC-A (10.0.0.0/16)"]
@@ -1763,7 +1763,7 @@ graph TB
     class VPC_A,RT_A accountA;
     class VPC_B,RT_B accountB;
     class EC2_A,RDS_A,EC2_B,Lambda_B resources;
-</div>
+</pre>
 
 ### Key Concepts
 
@@ -2794,7 +2794,7 @@ In this section, you'll learn how to implement **fine-grained access control** f
    EOF
    ```
    
-   <div class="mermaid">
+   <pre class="mermaid">
    flowchart TD
      Request[API Request] --> SCPs{Service Control<br>Policies}
      SCPs -->|Deny| Denied[Request Denied]
@@ -2816,7 +2816,7 @@ In this section, you'll learn how to implement **fine-grained access control** f
      class Allowed allowed;
      class SCPs,ResourcePolicies,PermBoundary,SessionPolicies,IdentityPolicies policy;
      class ImplicitDeny denied;
-   </div>
+   </pre>
 
 ### Task 2: Create Basic EC2 Management Policies
 
@@ -4405,7 +4405,7 @@ This section covers how to efficiently manage Amazon S3 storage using the AWS Co
 
 ### Task 5: Implement Lifecycle Policies for Cost Optimization
 
-<div class="mermaid">
+<pre class="mermaid">
 flowchart TD
     subgraph "S3 Storage Classes & Lifecycle"
         Upload([New Data Upload]) -->|Day 0| Standard[S3 Standard]
@@ -4433,7 +4433,7 @@ flowchart TD
     class Deep deep;
     class AccessPattern1,AccessPattern2,AccessPattern3,AccessPattern4 access;
     class Upload,Delete action;
-</div>
+</pre>
 
 **Steps:**
 
