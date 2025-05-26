@@ -408,7 +408,7 @@
 .mermaid {
   text-align: center;
   margin: 2rem 0;
-  background-color: #0f0f0f;
+  background-color: #0f0e15;
   border: 1px solid #333;
   border-radius: 8px;
   padding: 1.5rem;
@@ -426,8 +426,8 @@
   .label,
   .node-label,
   .edge-label {
-    fill: #ffffff !important;
-    color: #ffffff !important;
+    fill: #eeeeee !important;
+    color: #eeeeee !important;
   }
 
   // Ensure proper contrast for diagram elements
@@ -435,26 +435,26 @@
   .node circle,
   .node ellipse,
   .node polygon {
-    stroke: #ff6b6b !important;
+    stroke: #ff7b7b !important;
     stroke-width: 2px !important;
   }
 
   // Style flowchart nodes
   .flowchart-node {
-    fill: #1a1a1a !important;
-    stroke: #ff6b6b !important;
+    fill: #17151E !important;
+    stroke: #ff7b7b !important;
   }
 
   // Style sequence diagram elements
   .actor {
-    fill: #2d2d2d !important;
-    stroke: #ff6b6b !important;
+    fill: #17151E !important;
+    stroke: #ff7b7b !important;
   }
 
   // Style class diagram elements
   .classBox {
-    fill: #1a1a1a !important;
-    stroke: #ff6b6b !important;
+    fill: #17151E !important;
+    stroke: #ff7b7b !important;
   }
 
   @media only screen and (max-width: $tablet) {
