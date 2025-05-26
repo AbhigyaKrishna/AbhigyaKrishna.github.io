@@ -117,12 +117,6 @@ flowchart TD
    <html>
    <head>
        <title>AWS Web Application</title>
-       <style>
-           body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; }
-           h1 { color: #232f3e; }
-           .container { max-width: 800px; margin: 0 auto; }
-           .aws-color { color: #ff9900; }
-       </style>
    </head>
    <body>
        <div class="container">
@@ -238,12 +232,6 @@ flowchart TD
    <html>
    <head>
        <title>AWS Web Application</title>
-       <style>
-           body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; }
-           h1 { color: #232f3e; }
-           .container { max-width: 800px; margin: 0 auto; }
-           .aws-color { color: #ff9900; }
-       </style>
    </head>
    <body>
        <div class="container">
@@ -621,11 +609,6 @@ graph TD
      <html>
      <head>
          <title>Application 1</title>
-         <style>
-             body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; }
-             h1 { color: #1e88e5; }
-             .container { max-width: 800px; margin: 0 auto; border: 2px solid #1e88e5; padding: 20px; border-radius: 8px; }
-         </style>
      </head>
      <body>
          <div class="container">
@@ -659,11 +642,6 @@ graph TD
      <html>
      <head>
          <title>Application 2</title>
-         <style>
-             body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; }
-             h1 { color: #7cb342; }
-             .container { max-width: 800px; margin: 0 auto; border: 2px solid #7cb342; padding: 20px; border-radius: 8px; }
-         </style>
      </head>
      <body>
          <div class="container">
@@ -807,31 +785,6 @@ graph TD
    <html>
    <head>
        <title>App 1</title>
-       <style>
-           body { 
-               font-family: Arial, sans-serif; 
-               text-align: center; 
-               margin-top: 50px; 
-               background-color: #f0f7ff; /* Light blue background */
-           }
-           .container { 
-               max-width: 800px; 
-               margin: 0 auto; 
-               padding: 20px; 
-               background-color: white; 
-               border-radius: 10px; 
-               box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
-           }
-           h1 { color: #0066cc; } /* Blue heading for App1 */
-           .app-label {
-               display: inline-block;
-               background-color: #0066cc;
-               color: white;
-               padding: 5px 15px;
-               border-radius: 20px;
-               font-weight: bold;
-           }
-       </style>
    </head>
    <body>
        <div class="container">
@@ -867,31 +820,6 @@ graph TD
    <html>
    <head>
        <title>App 2</title>
-       <style>
-           body { 
-               font-family: Arial, sans-serif; 
-               text-align: center; 
-               margin-top: 50px; 
-               background-color: #fff0f0; /* Light red background */
-           }
-           .container { 
-               max-width: 800px; 
-               margin: 0 auto; 
-               padding: 20px; 
-               background-color: white; 
-               border-radius: 10px; 
-               box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
-           }
-           h1 { color: #cc0033; } /* Red heading for App2 */
-           .app-label {
-               display: inline-block;
-               background-color: #cc0033;
-               color: white;
-               padding: 5px 15px;
-               border-radius: 20px;
-               font-weight: bold;
-           }
-       </style>
    </head>
    <body>
        <div class="container">
