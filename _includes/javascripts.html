@@ -11,8 +11,9 @@
 <script>
   mermaid.initialize({
     startOnLoad: true,
-    theme: 'dark',
+    theme: 'base',
     themeVariables: {
+      // Base theme with minimal overrides to allow classDef styling
       primaryColor: '#ff7b7b',
       primaryTextColor: '#eeeeee',
       primaryBorderColor: '#ff7b7b',
@@ -24,7 +25,8 @@
       secondBkg: '#09080f',
       tertiaryBkg: '#17151E',
       textColor: '#eeeeee',
-      nodeBorder: '#ff7b7b',
+      // Remove node-specific colors to allow classDef overrides
+      // nodeBorder: '#ff7b7b',
       clusterBkg: '#17151E',
       clusterBorder: '#ff7b7b',
       defaultLinkColor: '#eeeeee',

@@ -421,40 +421,35 @@
     background-color: transparent !important;
   }
 
-  // Force dark theme colors for all text elements
+  // Allow classDef styling to take precedence, only set defaults
   text,
   .label,
   .node-label,
   .edge-label {
-    fill: #eeeeee !important;
-    color: #eeeeee !important;
+    fill: #eeeeee;
+    color: #eeeeee;
   }
 
-  // Ensure proper contrast for diagram elements
-  .node rect,
-  .node circle,
-  .node ellipse,
-  .node polygon {
-    stroke: #ff7b7b !important;
-    stroke-width: 2px !important;
+  // Default stroke for elements that don't have classDef styling
+  .node:not([class*="aws"]):not([class*="user"]):not([class*="alb"]):not([class*="rule"]):not([class*="servers"]) {
+    rect, circle, ellipse, polygon {
+      stroke: #ff7b7b;
+      stroke-width: 2px;
+    }
   }
 
-  // Style flowchart nodes
-  .flowchart-node {
-    fill: #17151E !important;
-    stroke: #ff7b7b !important;
+  // Ensure text readability without overriding classDef colors
+  .nodeLabel {
+    color: inherit;
   }
 
-  // Style sequence diagram elements
-  .actor {
-    fill: #17151E !important;
-    stroke: #ff7b7b !important;
+  // Style edges/arrows
+  .edgePath path {
+    stroke: #eeeeee;
   }
 
-  // Style class diagram elements
-  .classBox {
-    fill: #17151E !important;
-    stroke: #ff7b7b !important;
+  .edgeLabel {
+    background-color: #0f0e15;
   }
 
   @media only screen and (max-width: $tablet) {
