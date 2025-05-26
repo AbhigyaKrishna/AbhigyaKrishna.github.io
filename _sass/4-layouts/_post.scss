@@ -403,3 +403,68 @@
     padding: 48px 32px;
   }
 }
+
+/* Mermaid Diagrams */
+.mermaid {
+  text-align: center;
+  margin: 2rem 0;
+  background-color: #0f0f0f;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 1.5rem;
+  overflow-x: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+
+  svg {
+    max-width: 100%;
+    height: auto;
+    background-color: transparent !important;
+  }
+
+  // Force dark theme colors for all text elements
+  text,
+  .label,
+  .node-label,
+  .edge-label {
+    fill: #ffffff !important;
+    color: #ffffff !important;
+  }
+
+  // Ensure proper contrast for diagram elements
+  .node rect,
+  .node circle,
+  .node ellipse,
+  .node polygon {
+    stroke: #ff6b6b !important;
+    stroke-width: 2px !important;
+  }
+
+  // Style flowchart nodes
+  .flowchart-node {
+    fill: #1a1a1a !important;
+    stroke: #ff6b6b !important;
+  }
+
+  // Style sequence diagram elements
+  .actor {
+    fill: #2d2d2d !important;
+    stroke: #ff6b6b !important;
+  }
+
+  // Style class diagram elements
+  .classBox {
+    fill: #1a1a1a !important;
+    stroke: #ff6b6b !important;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    margin: 1.5rem 0;
+    padding: 1rem;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    margin: 1rem 0;
+    padding: 0.75rem;
+    font-size: 0.875rem;
+  }
+}

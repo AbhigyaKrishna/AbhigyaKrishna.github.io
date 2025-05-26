@@ -6,6 +6,48 @@
 <script src="{{ site.baseurl }}/js/vendors/transition.js"></script>
 <script src="{{ site.baseurl }}/js/vendors/zoom.min.js"></script>
 <script src="{{ site.baseurl }}/js/common.js"></script>
+
+<!-- Mermaid.js initialization -->
+<script>
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: 'dark',
+    themeVariables: {
+      primaryColor: '#ff6b6b',
+      primaryTextColor: '#ffffff',
+      primaryBorderColor: '#ff6b6b',
+      lineColor: '#ffffff',
+      secondaryColor: '#1a1a1a',
+      tertiaryColor: '#2d2d2d',
+      background: '#0f0f0f',
+      mainBkg: '#1a1a1a',
+      secondBkg: '#2d2d2d',
+      tertiaryBkg: '#3a3a3a',
+      textColor: '#ffffff',
+      nodeBorder: '#ff6b6b',
+      clusterBkg: '#2d2d2d',
+      clusterBorder: '#ff6b6b',
+      defaultLinkColor: '#ffffff',
+      titleColor: '#ffffff',
+      edgeLabelBackground: '#1a1a1a',
+      actorBorder: '#ff6b6b',
+      actorBkg: '#2d2d2d',
+      actorTextColor: '#ffffff',
+      actorLineColor: '#ffffff',
+      signalColor: '#ffffff',
+      signalTextColor: '#ffffff',
+      c0: '#ff6b6b',
+      c1: '#4ecdc4',
+      c2: '#45b7d1',
+      c3: '#f9ca24',
+      c4: '#6c5ce7',
+      c5: '#a0a0a0',
+      c6: '#fd79a8',
+      c7: '#fdcb6e'
+    }
+  });
+</script>
+
 <script>
   var base_url = "",
     pagination_next_url = base_url + '/page2',
