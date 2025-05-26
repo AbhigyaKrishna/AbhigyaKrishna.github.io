@@ -1345,6 +1345,7 @@ graph TD
         * Your security architecture is working as designed
 
     * Return to your bastion connection and exit both SSH sessions:
+   
    ```bash
    # Exit from the private instance
    exit
@@ -5129,8 +5130,8 @@ practices for security, cost optimization, and data management throughout.
    EOF
    
    # Make the script executable (use only when ready to delete all versions!)
-   # chmod +x delete-all-versions.sh
-   # ./delete-all-versions.sh
+   chmod +x delete-all-versions.sh
+   ./delete-all-versions.sh
    ```
 
 4. **Delete the Bucket**:
