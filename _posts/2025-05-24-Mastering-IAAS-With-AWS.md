@@ -11,10 +11,7 @@ tags: [ Cloud, DevOps, AWS, Infrastructure ]
 
 > "The cloud is not about how you build infrastructure. It's about how you use the flexibility it provides."
 
-Let's face it – in today's fast-paced digital world, [**cloud computing
-**](https://aws.amazon.com/what-is-cloud-computing/) has evolved from just another tech buzzword into the very *
-*foundation** of modern IT infrastructure. Look beyond the marketing hype, and you'll discover a truly *powerful
-concept* that's completely changing **how businesses operate and scale** their technology.
+Let's face it – in today's fast-paced digital world, [**cloud computing**](https://aws.amazon.com/what-is-cloud-computing/) has evolved from just another tech buzzword into the very **foundation** of modern IT infrastructure. Look beyond the marketing hype, and you'll discover a truly *powerful concept* that's completely changing **how businesses operate and scale** their technology.
 
 ## The Power of Cloud Computing
 
@@ -27,12 +24,7 @@ leverage the same advanced infrastructure that was once the exclusive domain of 
 
 ### Understanding IaaS: The Foundation of Cloud Architecture
 
-You've probably heard about the "cloud service
-models" – ([SaaS](https://aws.amazon.com/what-is-saas/), [PaaS](https://aws.amazon.com/what-is-paas/), and [**IaaS
-**](https://aws.amazon.com/what-is/iaas/)). While they're all important, let's focus on
-***Infrastructure as a Service (IaaS)*** – it's truly the **most fundamental layer** of them all. Think of IaaS as
-providing the *essential building blocks* for your cloud IT – the digital equivalent of the concrete, steel, and
-electrical systems of a physical building:
+You've probably heard about the "cloud service models" – ([SaaS](https://aws.amazon.com/what-is-saas/), [PaaS](https://aws.amazon.com/what-is-paas/), and [**IaaS**](https://aws.amazon.com/what-is/iaas/)). While they're all important, let's focus on ***Infrastructure as a Service (IaaS)*** – it's truly the **most fundamental layer** of them all. Think of IaaS as providing the *essential building blocks* for your cloud IT – the digital equivalent of the concrete, steel, and electrical systems of a physical building:
 
 | Resource Type                                                 | What You Get                                                                                                                               | Traditional Equivalent                             |
 |---------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------|
@@ -49,20 +41,11 @@ configured and managed. It's your infrastructure, just without the headaches of 
 
 ### AWS: The Pioneer of Cloud IaaS
 
-Let's talk about the elephant in the room when it comes to IaaS providers – *
-*[Amazon Web Services (AWS)](https://aws.amazon.com/)**. AWS isn't just another player; they're the **pioneer** who
-blazed the trail and remain the **industry leader** today. When AWS launched back in 2006, they didn't just enter the
-market – they *fundamentally changed* the entire game of how businesses approach IT infrastructure. Look at what they
-bring to the table:
+Let's talk about the elephant in the room when it comes to IaaS providers – **[Amazon Web Services (AWS)](https://aws.amazon.com/)**. AWS isn't just another player; they're the **pioneer** who blazed the trail and remain the **industry leader** today. When AWS launched back in 2006, they didn't just enter the market – they *fundamentally changed* the entire game of how businesses approach IT infrastructure. Look at what they bring to the table:
 
-- An incredible lineup of over **200 fully featured** [services](https://aws.amazon.com/products/) you can access from
-  practically *anywhere on Earth*
-- A massive global footprint spanning [**27 geographic regions
-  **](https://aws.amazon.com/about-aws/global-infrastructure/) with **87** [*availability
-  zones*](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/) – meaning your applications can be closer
-  to your users
-- Rock-solid [*security capabilities*](https://aws.amazon.com/security/) and [*compliance
-  certifications*](https://aws.amazon.com/compliance/programs/) that let you sleep at night
+- An incredible lineup of over **200 fully featured** [services](https://aws.amazon.com/products/) you can access from practically *anywhere on Earth*
+- A massive global footprint spanning [**27 geographic regions**](https://aws.amazon.com/about-aws/global-infrastructure/) with **87** [*availability zones*](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/) – meaning your applications can be closer to your users
+- Rock-solid [*security capabilities*](https://aws.amazon.com/security/) and [*compliance certifications*](https://aws.amazon.com/compliance/programs/) that let you sleep at night
 - **Unmatched scale and reliability** whether you're a scrappy startup or a Fortune 500 giant
 
 Ready to dive in? Throughout this **comprehensive guide**, I'll show you how to harness AWS's *powerful IaaS offerings*
@@ -135,8 +118,7 @@ flowchart TD
 1. **Launch EC2 Instances**:
     * Navigate
       to [EC2 dashboard](https://console.aws.amazon.com/ec2/) > [Launch Instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html)
-    * Select [Ubuntu Server 22.04 LTS](https://aws.amazon.com/marketplace/pp/prodview-iftkyuwv2sjxi), choose [
-      `t2.micro`](https://aws.amazon.com/ec2/instance-types/) (free tier eligible)
+    * Select [Ubuntu Server 22.04 LTS](https://aws.amazon.com/marketplace/pp/prodview-iftkyuwv2sjxi), choose [`t2.micro`](https://aws.amazon.com/ec2/instance-types/) (free tier eligible)
     * Configure [network settings](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-instance-addressing.html)
       with [security groups](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security-groups.html) allowing
       HTTP/SSH
@@ -485,10 +467,10 @@ graph TD
     classDef rule fill:#42A5F5,stroke:#0D47A1,color:white
     classDef servers fill:#66BB6A,stroke:#2E7D32,color:white
     
-    class User user
-    class ALB,DNS alb
-    class APIRule,BlogRule,AdminRule,DefaultRule rule
-    class APIServers,BlogServers,AdminServers,WebServers servers
+        class User user
+        class ALB,DNS alb
+        class APIRule,BlogRule,AdminRule,DefaultRule rule
+        class APIServers,BlogServers,AdminServers,WebServers servers
 </pre>
 
 ### Key Concepts
@@ -637,132 +619,132 @@ graph TD
 3. **Prepare and Test Applications**:
     * **Configure Your Backend Applications:**
         * SSH into each EC2 instance that will host both applications:
-      ```bash
-      ssh -i "your-key.pem" ubuntu@instance-public-ip
-      ```
+        ```bash
+        ssh -i "your-key.pem" ubuntu@instance-public-ip
+        ```
         * Create directory structure for each application:
-      ```bash
-      # Create directories for both applications
-      sudo mkdir -p /var/www/html/app1
-      sudo mkdir -p /var/www/html/app2
-      
-      # Set proper ownership
-      sudo chown -R www-data:www-data /var/www/html/app1
-      sudo chown -R www-data:www-data /var/www/html/app2
-      ```
+        ```bash
+        # Create directories for both applications
+        sudo mkdir -p /var/www/html/app1
+        sudo mkdir -p /var/www/html/app2
+        
+        # Set proper ownership
+        sudo chown -R www-data:www-data /var/www/html/app1
+        sudo chown -R www-data:www-data /var/www/html/app2
+          ```
         * Create the health check endpoint for App1:
-      ```bash
-      sudo tee /var/www/html/app1/health > /dev/null << EOF
-      <!DOCTYPE html>
-      <html>
-      <head>
-          <title>App1 Health Check</title>
-      </head>
-      <body>
-          <h1>App1 is healthy</h1>
-      </body>
-      </html>
-      EOF
-      ```
+        ```bash
+        sudo tee /var/www/html/app1/health > /dev/null << EOF
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>App1 Health Check</title>
+        </head>
+        <body>
+            <h1>App1 is healthy</h1>
+        </body>
+        </html>
+        EOF
+        ```
         * Create a sample App1 homepage:
-      ```bash
-      sudo tee /var/www/html/app1/index.html > /dev/null << EOF
-      <!DOCTYPE html>
-      <html>
-      <head>
-          <title>Application 1</title>
-      </head>
-      <body>
-          <div class="container">
-              <h1>Welcome to Application 1</h1>
+        ```bash
+        sudo tee /var/www/html/app1/index.html > /dev/null << EOF
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Application 1</title>
+        </head>
+        <body>
+            <div class="container">
+                <h1>Welcome to Application 1</h1>
               <p>This content is served by target group app1-target-group</p>
-              <p>Server: $(hostname)</p>
-              <p>Path: /app1/</p>
-          </div>
-      </body>
-      </html>
-      EOF
-      ```
+                <p>Server: $(hostname)</p>
+                <p>Path: /app1/</p>
+            </div>
+        </body>
+        </html>
+        EOF
+        ```
         * Create the health check endpoint for App2:
-      ```bash
-      sudo tee /var/www/html/app2/health > /dev/null << EOF
-      <!DOCTYPE html>
-      <html>
-      <head>
-          <title>App2 Health Check</title>
-      </head>
-      <body>
-          <h1>App2 is healthy</h1>
-      </body>
-      </html>
-      EOF
-      ```
+        ```bash
+        sudo tee /var/www/html/app2/health > /dev/null << EOF
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>App2 Health Check</title>
+        </head>
+        <body>
+            <h1>App2 is healthy</h1>
+        </body>
+        </html>
+        EOF
+        ```
         * Create a sample App2 homepage:
-      ```bash
-      sudo tee /var/www/html/app2/index.html > /dev/null << EOF
-      <!DOCTYPE html>
-      <html>
-      <head>
-          <title>Application 2</title>
-      </head>
-      <body>
-          <div class="container">
-              <h1>Welcome to Application 2</h1>
-              <p>This content is served by target group app2-target-group</p>
-              <p>Server: $(hostname)</p>
-              <p>Path: /app2/</p>
-          </div>
-      </body>
-      </html>
-      EOF
-      ```
+        ```bash
+        sudo tee /var/www/html/app2/index.html > /dev/null << EOF
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Application 2</title>
+        </head>
+        <body>
+            <div class="container">
+                <h1>Welcome to Application 2</h1>
+                <p>This content is served by target group app2-target-group</p>
+                <p>Server: $(hostname)</p>
+                <p>Path: /app2/</p>
+            </div>
+        </body>
+        </html>
+        EOF
+        ```
         * Configure Nginx to handle path-based routing properly:
-      ```bash
-      sudo tee /etc/nginx/sites-available/default > /dev/null << EOF
-      server {
-          listen 80 default_server;
-          listen [::]:80 default_server;
-          
-          root /var/www/html;
-          index index.html index.htm;
-          
-          # For root path
-          location / {
-              try_files \$uri \$uri/ =404;
-          }
-          
-          # For App1 path
-          location /app1/ {
-              alias /var/www/html/app1/;
-              try_files \$uri \$uri/ /app1/index.html;
-          }
-          
-          # For App1 health check
-          location = /app1/health {
-              alias /var/www/html/app1/health;
-          }
-          
-          # For App2 path
-          location /app2/ {
-              alias /var/www/html/app2/;
-              try_files \$uri \$uri/ /app2/index.html;
-          }
-          
-          # For App2 health check
-          location = /app2/health {
-              alias /var/www/html/app2/health;
-          }
-      }
-      EOF
-      ```
+          ```bash
+        sudo tee /etc/nginx/sites-available/default > /dev/null << EOF
+        server {
+            listen 80 default_server;
+            listen [::]:80 default_server;
+            
+            root /var/www/html;
+            index index.html index.htm;
+            
+            # For root path
+            location / {
+                try_files \$uri \$uri/ =404;
+            }
+            
+            # For App1 path
+            location /app1/ {
+                alias /var/www/html/app1/;
+                try_files \$uri \$uri/ /app1/index.html;
+            }
+            
+            # For App1 health check
+            location = /app1/health {
+                alias /var/www/html/app1/health;
+            }
+            
+            # For App2 path
+            location /app2/ {
+                alias /var/www/html/app2/;
+                try_files \$uri \$uri/ /app2/index.html;
+            }
+            
+            # For App2 health check
+            location = /app2/health {
+                alias /var/www/html/app2/health;
+            }
+        }
+        EOF
+        ```
         * Test and reload Nginx configuration:
-      ```bash
-      # Verify nginx configuration syntax
-      sudo nginx -t
-      
-      # If the test passes, reload nginx to apply changes
-      sudo systemctl reload nginx
-      ```
+        ```bash
+        # Verify nginx configuration syntax
+        sudo nginx -t
+        
+        # If the test passes, reload nginx to apply changes
+        sudo systemctl reload nginx
+        ```
         * Repeat these steps for all EC2 instances in your target groups
 
     * **Test Direct Access to Applications:**
@@ -1374,8 +1356,7 @@ and internet accessibility, while maintaining the ability to manage all resource
   traffic to your AWS resources in
   the [ap-south-1 region](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/?p=ngi&loc=4)
 * Implementing [HTTPS with AWS Certificate Manager](https://docs.aws.amazon.com/acm/latest/userguide/acm-overview.html)
-*
-Creating [custom domain endpoints](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-to-elb-load-balancer.html)
+* Creating [custom domain endpoints](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-to-elb-load-balancer.html)
 for multi-port applications
 
 This section guides you through the complete process of configuring a custom domain for your AWS applications, from
