@@ -631,7 +631,7 @@ graph TD
         # Set proper ownership
         sudo chown -R www-data:www-data /var/www/html/app1
         sudo chown -R www-data:www-data /var/www/html/app2
-          ```
+        ```
         * Create the health check endpoint for App1:
         ```bash
         sudo tee /var/www/html/app1/health > /dev/null << EOF
@@ -699,7 +699,7 @@ graph TD
         EOF
         ```
         * Configure Nginx to handle path-based routing properly:
-          ```bash
+        ```bash
         sudo tee /etc/nginx/sites-available/default > /dev/null << EOF
         server {
             listen 80 default_server;
@@ -888,7 +888,6 @@ graph TD
    
    # Restart the web server to apply changes
    sudo systemctl restart nginx || sudo systemctl restart apache2
-   ```
    ```
 
 2. **Test Routing Configuration**:
