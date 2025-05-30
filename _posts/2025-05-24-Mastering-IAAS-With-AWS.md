@@ -156,6 +156,8 @@ flowchart TD
     EOF
     ```
 
+    ![ec2 provision](/images/post-assets/ec2-provisioning.jpg)
+
 4. **Verify Deployment**:
     - Access each instance's public IP/DNS in a browser
     - Confirm the application is running correctly
@@ -207,6 +209,8 @@ flowchart TD
         - Confirm the default HTTP:80 listener is added
         - In the "Default action" section, select "Forward to target group" and choose your `web-target-group`
     - Review settings and click "Create load balancer"
+
+    ![lb provision](/images/post-assets/load-balancer-provisioning.jpg)
 
 3. **Verify Load Balancer**:
     - After creation, wait for the ALB to transition from "Provisioning" to "Active" state (~2-5 minutes)
@@ -317,6 +321,8 @@ flowchart TD
     - For Step 7 (Review):
         - Review all settings
         - Click "Create Auto Scaling group"
+    
+    ![asg provision](/images/post-assets/auto-scaling-provisioning.jpg)
 
 3. **Verify ASG Configuration**:
     - After creating the ASG, navigate to the "Auto Scaling Groups" page
