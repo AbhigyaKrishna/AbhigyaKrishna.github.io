@@ -3,7 +3,7 @@ layout: post
 title: API Showdown - REST vs GraphQL vs SOAP
 description: Choosing the right API style for your app - differences, trade-offs and a practical case study.
 date: 2025-11-06 09:00 +0530
-image: "/images/post-assets/api-showdown.webp"
+image: "/images/api-showdown.webp"
 tags: [APIs, REST, GraphQL, SOAP]
 ---
 
