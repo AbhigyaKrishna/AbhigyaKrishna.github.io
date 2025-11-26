@@ -1,17 +1,17 @@
 ---
 layout: post
-title: API Showdown — REST vs GraphQL vs SOAP
-description: Choosing the right API style for your app: differences, trade-offs and a practical case study.
+title: API Showdown - REST vs GraphQL vs SOAP
+description: Choosing the right API style for your app - differences, trade-offs and a practical case study.
 date: 2025-11-06 09:00 +0530
-tags: [APIs, REST, GraphQL, SOAP]
 image: "/images/post-assets/api-showdown.webp"
+tags: [APIs, REST, GraphQL, SOAP]
 ---
 
-# API Showdown — REST vs GraphQL vs SOAP
+# API Showdown - REST vs GraphQL vs SOAP
 
 > How your client talks to the server shapes everything from UX to network costs.
 
-Data is involved in every part of modern web and mobile applications: user profiles, product lists, feeds, and settings. The protocol you choose for client ↔ server communication directly influences performance, developer ergonomics and how easy it is to evolve your system. Here I compare three common approaches — REST, GraphQL and SOAP — explain their trade‑offs, and give practical guidance on when to pick each.
+Data is involved in every part of modern web and mobile applications: user profiles, product lists, feeds, and settings. The protocol you choose for client ↔ server communication directly influences performance, developer ergonomics and how easy it is to evolve your system. Here I compare three common approaches - REST, GraphQL and SOAP - explain their trade‑offs, and give practical guidance on when to pick each.
 
 ## What is REST?
 
@@ -96,9 +96,9 @@ _SOAP uses XML envelopes with headers and body sections for structured messaging
 
 ## Pros and cons
 
--   REST — Pros: easy to implement, works with HTTP caching, excellent tool support. Cons: may over/under‑fetch and require multiple requests for related data.
--   GraphQL — Pros: client control over shape, fewer round trips, ideal for nested data. Cons: more complex server setup, caching is trickier, large queries can hit backends hard.
--   SOAP — Pros: formal contracts, rich enterprise features (security, transactions). Cons: verbose XML, heavier tooling and slower adoption for modern web apps.
+-   REST - Pros: easy to implement, works with HTTP caching, excellent tool support. Cons: may over/under‑fetch and require multiple requests for related data.
+-   GraphQL - Pros: client control over shape, fewer round trips, ideal for nested data. Cons: more complex server setup, caching is trickier, large queries can hit backends hard.
+-   SOAP - Pros: formal contracts, rich enterprise features (security, transactions). Cons: verbose XML, heavier tooling and slower adoption for modern web apps.
 
 ## Practical recommendations
 
@@ -108,7 +108,7 @@ _SOAP uses XML envelopes with headers and body sections for structured messaging
 
 Many teams use a hybrid approach: public REST endpoints for simple resources and a GraphQL layer where clients need flexible aggregation.
 
-## Case study — small shop vs analytics dashboard
+## Case study - small shop vs analytics dashboard
 
 -   Small e‑commerce shop: product listings, cart and checkout are well‑served by REST. You get straightforward endpoints, easy CDN caching and fast time to market.
 -   Analytics dashboard or social feed: the UI often needs nested joins (posts → author → reactions → aggregated stats). GraphQL lets the client request the exact nested fields in one request, saving bandwidth and latency.
@@ -119,7 +119,7 @@ In short: pick REST for simplicity and networks that benefit from HTTP caching; 
 
 -   Protect your server: set query depth and cost limits to avoid expensive requests.
 -   Add persisted queries or automatic persisted query (APQ) support to reduce payload sizes and improve caching.
--   Monitor resolver performance — add tracing per field so you can find expensive data fetches.
+-   Monitor resolver performance - add tracing per field so you can find expensive data fetches.
 
 ## Conclusion
 
